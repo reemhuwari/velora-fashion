@@ -1,0 +1,75 @@
+<div
+  class="modal-overlay"
+  (click)="close.emit()"
+>
+
+  <div
+    class="modal-card"
+    (click)="$event.stopPropagation()"
+  >
+
+    <button
+      class="close-btn"
+      (click)="close.emit()"
+    >
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <div class="modal-grid">
+
+      <div class="modal-image">
+
+        <img
+          [src]="product.image"
+          [alt]="product.titleKey"
+        >
+
+      </div>
+
+      <div class="modal-content">
+
+        <span class="category">
+          {{ product.categoryKey }}
+        </span>
+
+        <h2>
+          {{ product.titleKey }}
+        </h2>
+
+        <p class="description">
+          {{ product.description }}
+        </p>
+
+        <div class="rating">
+          ⭐ {{ product.rating }}
+        </div>
+
+        <div class="price">
+          ${{ product.price }}
+        </div>
+
+        <div class="actions">
+
+          <button
+            class="cart-btn"
+            (click)="addToCart()"
+          >
+            {{ 'QUICK_VIEW.ADD_TO_CART' | translate }}
+          </button>
+
+          <button
+            class="wishlist-btn"
+            (click)="addToWishlist()"
+          >
+            <i class="bi bi-heart"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

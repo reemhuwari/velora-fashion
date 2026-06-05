@@ -1,0 +1,116 @@
+<section class="profile-page">
+
+  <div class="profile-layout">
+
+    <aside class="profile-sidebar">
+
+      <div class="avatar">
+
+        {{
+          name.charAt(0)
+        }}
+
+      </div>
+
+      <h3>
+        {{ name }}
+      </h3>
+
+      <p>
+        {{ email }}
+      </p>
+
+     <nav>
+
+  <a routerLink="/orders">
+    <i class="bi bi-bag"></i>
+    {{ 'ORDERS' | translate }}
+  </a>
+
+  <a routerLink="/wishlist">
+    <i class="bi bi-heart"></i>
+    {{ 'WISHLIST' | translate }}
+  </a>
+
+  <a routerLink="/cart">
+    <i class="bi bi-cart"></i>
+    {{ 'CART' | translate }}
+  </a>
+
+</nav>
+    </aside>
+
+    <div class="profile-content">
+
+      <div class="profile-card">
+
+        <h2>
+  {{ 'PROFILE_PAGE.PERSONAL_INFORMATION' | translate }}
+</h2>
+
+        <div class="form-group">
+
+          <label>
+  {{ 'PROFILE_PAGE.FULL_NAME' | translate }}
+</label>
+
+          <input
+            type="text"
+            [(ngModel)]="name"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+        <label>
+  {{ 'PROFILE_PAGE.EMAIL' | translate }}
+</label>
+
+          <input
+            type="email"
+            [(ngModel)]="email"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label>
+  {{ 'PROFILE_PAGE.PHONE_NUMBER' | translate }}
+</label>
+
+          <input
+            type="text"
+            [(ngModel)]="phone"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+         <label>
+  {{ 'PROFILE_PAGE.CITY' | translate }}
+</label>
+
+          <input
+            type="text"
+            [(ngModel)]="city"
+          >
+
+        </div>
+
+        <button
+  class="save-btn"
+  (click)="saveProfile()"
+>
+  {{ 'PROFILE_PAGE.SAVE_CHANGES' | translate }}
+</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

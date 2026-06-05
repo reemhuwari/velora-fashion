@@ -1,0 +1,145 @@
+<section class="shop-page">
+
+  <aside class="shop-sidebar">
+
+    <div class="sidebar-card">
+
+     <h3>{{ 'SHOP_PAGE.SEARCH' | translate }}</h3>
+
+      <div class="search-box">
+
+  <input
+  type="text"
+
+ placeholder="{{ 'SHOP_PAGE.SEARCH_PLACEHOLDER' | translate }}"
+
+  [(ngModel)]="searchTerm"
+
+  (input)="onSearch()"
+
+  (blur)="hideSuggestions()"
+>
+  <div
+    *ngIf="
+      searchSuggestions().length
+    "
+    class="search-dropdown"
+  >
+
+    <div
+      *ngFor="
+        let item of
+        searchSuggestions()
+      "
+      class="suggestion-item"
+
+      (click)="
+        selectSuggestion(
+          item
+        )
+      "
+    >
+<img
+  [src]="item.image"
+  [alt]="item.titleKey | translate"
+/>
+
+      <span>
+  {{ item.titleKey | translate }}
+</span>
+
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+
+    <div class="sidebar-card">
+
+      <h3>{{ 'SHOP_PAGE.CATEGORIES' | translate }}</h3>
+
+     <button
+  *ngFor="let category of categories"
+  (click)="selectCategory(category)"
+  [class.active]="selectedCategory === category"
+>
+  {{
+    category === 'All'
+      ? ('CATEGORIES.ALL' | translate)
+      : ('CATEGORIES.' + category.toUpperCase() | translate)
+  }}
+</button>
+    </div>
+
+    <div class="sidebar-card">
+
+      <h3>{{ 'SHOP_PAGE.SORT_BY' | translate }}</h3>
+
+      <select
+        [(ngModel)]="sortOption"
+        (change)="sortProducts()"
+      >
+        <option value="">
+  {{ 'SHOP_PAGE.DEFAULT' | translate }}
+</option>
+
+        <option value="low">
+  {{ 'SHOP_PAGE.PRICE_LOW_HIGH' | translate }}
+</option>
+
+       <option value="high">
+  {{ 'SHOP_PAGE.PRICE_HIGH_LOW' | translate }}
+</option>
+
+        <option value="rating">
+  {{ 'SHOP_PAGE.TOP_RATED' | translate }}
+</option>
+
+      </select>
+
+    </div>
+
+  </aside>
+
+  <div class="shop-content">
+
+    <div class="shop-header">
+
+     <h2>
+  {{ 'SHOP_PAGE.FASHION_COLLECTION' | translate }}
+</h2>
+
+     <p>
+  {{ filteredProducts().length }}
+  {{ 'SHOP_PAGE.PRODUCTS_FOUND' | translate }}
+</p>
+
+    </div>
+<div
+  *ngIf="isLoading"
+  class="skeleton-grid"
+>
+
+  <app-skeleton-card
+    *ngFor="let item of [1,2,3,4,5,6]"
+  />
+
+</div>
+   <div
+  *ngIf="!isLoading"
+  class="products-grid"
+>
+  <app-product-card
+    *ngFor="
+      let product of filteredProducts()
+    "
+    [product]="product"
+  />
+
+</div>
+
+  </div>
+
+</section>

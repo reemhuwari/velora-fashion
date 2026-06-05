@@ -1,0 +1,60 @@
+<h1>Orders Management</h1>
+
+<div class="orders-table">
+
+  <div class="table-header">
+
+    <span>ID</span>
+
+    <span>Customer</span>
+
+    <span>Total</span>
+
+    <span>Status</span>
+
+    <span>Date</span>
+
+  </div>
+
+  <div
+    class="table-row"
+    *ngFor="
+      let order of orders()
+    "
+  >
+
+    <span>
+      #{{ order.id }}
+    </span>
+
+    <span>
+
+      <strong>
+        {{ order.customer }}
+      </strong>
+
+      <br>
+
+      <small>
+        {{ order.email }}
+      </small>
+
+    </span>
+
+    <span>
+      ${{ order.total }}
+    </span>
+
+    <span
+      [class.pending]="order.status === 'Pending'"
+    >
+      {{ order.status }}
+    </span>
+
+    <span>
+      {{ order.date }}
+    </span>
+
+  </div>
+
+</div>

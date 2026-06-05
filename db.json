@@ -1,0 +1,331 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "titleKey": "PRODUCTS.HOODIE_TITLE",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "price": 120,
+      "oldPrice": 180,
+      "rating": 4.9,
+      "isNew": true
+    },
+    {
+      "id": "2",
+      "titleKey": "PRODUCTS.MINIMAL_BLACK_JACKET",
+      "categoryKey": "CATEGORIES.WINTER",
+      "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f",
+      "price": 210,
+      "rating": 4.7
+    },
+    {
+      "id": "3",
+      "titleKey": "PRODUCTS.MODERN_WHITE_SNEAKERS",
+      "categoryKey": "CATEGORIES.SHOES",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "price": 150,
+      "oldPrice": 199,
+      "rating": 4.8,
+      "isNew": true
+    },
+    {
+      "id": "4",
+      "titleKey": "PRODUCTS.ELEGANT_BEIGE_COAT",
+      "categoryKey": "CATEGORIES.LUXURY",
+      "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b",
+      "price": 260,
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "titleKey": "PRODUCTS.CLASSIC_WHITE_TSHIRT",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "price": 65,
+      "rating": 4.6
+    },
+    {
+      "id": "6",
+      "titleKey": "PRODUCTS.PREMIUM_DENIM_JEANS",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1542272604-787c3835535d",
+      "price": 110,
+      "rating": 4.8
+    },
+    {
+      "id": "7",
+      "titleKey": "PRODUCTS.WOOL_WINTER_SWEATER",
+      "categoryKey": "CATEGORIES.WINTER",
+      "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105",
+      "price": 135,
+      "rating": 4.7
+    },
+    {
+      "id": "8",
+      "titleKey": "PRODUCTS.LEATHER_ANKLE_BOOTS",
+      "categoryKey": "CATEGORIES.SHOES",
+      "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+      "price": 180,
+      "rating": 4.9,
+      "isNew": true
+    },
+    {
+      "id": "9",
+      "titleKey": "PRODUCTS.DESIGNER_BLAZER",
+      "categoryKey": "CATEGORIES.LUXURY",
+      "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35",
+      "price": 290,
+      "rating": 5
+    },
+    {
+      "id": "10",
+      "titleKey": "PRODUCTS.OVERSIZED_HOODIE",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+      "price": 95,
+      "rating": 4.8,
+      "isNew": true
+    },
+    {
+      "id": "11",
+      "titleKey": "PRODUCTS.CASUAL_LINEN_SHIRT",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157",
+      "price": 85,
+      "rating": 4.7
+    },
+    {
+      "id": "12",
+      "titleKey": "PRODUCTS.SLIM_FIT_CHINOS",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a",
+      "price": 99,
+      "rating": 4.6
+    },
+    {
+      "id": "13",
+      "titleKey": "PRODUCTS.PUFFER_WINTER_JACKET",
+      "categoryKey": "CATEGORIES.WINTER",
+      "image": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb",
+      "price": 220,
+      "rating": 4.9,
+      "isNew": true
+    },
+    {
+      "id": "14",
+      "titleKey": "PRODUCTS.CASHMERE_TURTLENECK",
+      "categoryKey": "CATEGORIES.WINTER",
+      "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b",
+      "price": 170,
+      "rating": 4.8
+    },
+    {
+      "id": "15",
+      "titleKey": "PRODUCTS.RUNNING_SNEAKERS",
+      "categoryKey": "CATEGORIES.SHOES",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "price": 145,
+      "rating": 4.8
+    },
+    {
+      "id": "16",
+      "titleKey": "PRODUCTS.LEATHER_LOAFERS",
+      "categoryKey": "CATEGORIES.SHOES",
+      "image": "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4",
+      "price": 190,
+      "rating": 4.9
+    },
+    {
+      "id": "17",
+      "titleKey": "PRODUCTS.SILK_EVENING_DRESS",
+      "categoryKey": "CATEGORIES.LUXURY",
+      "image": "https://images.unsplash.com/photo-1496747611176-843222e1e57c",
+      "price": 390,
+      "rating": 5,
+      "isNew": true
+    },
+    {
+      "id": "19",
+      "titleKey": "PRODUCTS.CROPPED_DENIM_JACKET",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
+      "price": 125,
+      "rating": 4.7
+    },
+    {
+      "id": "20",
+      "titleKey": "PRODUCTS.GRAPHIC_PRINT_TSHIRT",
+      "categoryKey": "CATEGORIES.STREETWEAR",
+      "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27",
+      "price": 55,
+      "rating": 4.5
+    },
+    {
+      "id": "21",
+      "titleKey": "PRODUCTS.FLEECE_ZIP_HOODIE",
+      "categoryKey": "CATEGORIES.WINTER",
+      "image": "https://images.unsplash.com/photo-1503341504253-dff4815485f1",
+      "price": 110,
+      "rating": 4.8,
+      "isNew": true
+    },
+    {
+      "id": "22",
+      "titleKey": "PRODUCTS.LONG_WOOL_COAT",
+      "categoryKey": "CATEGORIES.WINTER",
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+      "price": 275,
+      "rating": 4.9
+    },
+    {
+      "id": "23",
+      "titleKey": "PRODUCTS.HIGH_TOP_SNEAKERS",
+      "categoryKey": "CATEGORIES.SHOES",
+      "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519",
+      "price": 165,
+      "rating": 4.8
+    },
+    {
+      "id": "24",
+      "titleKey": "PRODUCTS.SUEDE_CHELSEA_BOOTS",
+      "categoryKey": "CATEGORIES.SHOES",
+      "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+      "price": 210,
+      "rating": 4.9
+    },
+    {
+      "id": "25",
+      "titleKey": "PRODUCTS.PREMIUM_VELVET_BLAZER",
+      "categoryKey": "CATEGORIES.LUXURY",
+      "image": "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7",
+      "price": 340,
+      "rating": 5
+    },
+    {
+      "id": "26",
+      "titleKey": "PRODUCTS.EMBROIDERED_EVENING_GOWN",
+      "categoryKey": "CATEGORIES.LUXURY",
+      "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae",
+      "price": 520,
+      "rating": 5,
+      "isNew": true
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Reem Huwari",
+      "email": "reem@test.com",
+      "password": "123456"
+    },
+    {
+      "name": "ghazal othman",
+      "email": "GHazal@example.com",
+      "password": "GHazal2022$$",
+      "id": "qysZEozoEkc"
+    },
+    {
+      "name": "noor ",
+      "email": "noor@example.com",
+      "password": "Noor2003$$",
+      "id": "oWfi-PKFCU4"
+    },
+    {
+      "name": "",
+      "email": "noor@example.com",
+      "password": "Noor2003$$",
+      "id": "s4FFkqBO4Jk"
+    },
+    {
+      "name": "",
+      "email": "noor@example.com",
+      "password": "Noor2003$$",
+      "id": "nCeo_wSDShI"
+    },
+    {
+      "name": "reemhuwari",
+      "email": "reem@example.com",
+      "password": "ReemHuwari99@",
+      "id": "TeZb5E9b0qI"
+    },
+    {
+      "name": "reem2",
+      "email": "reemh@example.com",
+      "password": "Reemhuwari00$",
+      "id": "wmo4ntwTwpY"
+    },
+    {
+      "name": "reem yousef",
+      "email": "reemyo@example.com",
+      "password": "Reem1998$$",
+      "id": "RRjmQTO3TZk"
+    },
+    {
+      "name": "reemyousef ",
+      "email": "reemyo2@example.com",
+      "password": "GHazal2022$$",
+      "id": "KCTG3anxXbI"
+    }
+  ],
+  "orders": [
+    {
+      "customerId": "RRjmQTO3TZk",
+      "customer": "reem yousef",
+      "email": "reemyo@example.com",
+      "phone": "0786543455",
+      "city": "عمان",
+      "address": "طبربور",
+      "items": [
+        {
+          "product": {
+            "id": "7",
+            "titleKey": "PRODUCTS.WOOL_WINTER_SWEATER",
+            "categoryKey": "CATEGORIES.WINTER",
+            "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105",
+            "price": 135,
+            "rating": 4.7,
+            "reviews": [
+              {
+                "id": 1780660141238,
+                "username": "ريم هواري",
+                "comment": "انيق",
+                "rating": "4"
+              }
+            ]
+          },
+          "quantity": 1
+        }
+      ],
+      "total": 135,
+      "date": "6/5/2026",
+      "status": "Pending",
+      "id": "ritqUve97nQ"
+    },
+    {
+      "customerId": "KCTG3anxXbI",
+      "customer": "reemyousef ",
+      "email": "reemyo2@example.com",
+      "phone": "078654562",
+      "city": "عمان",
+      "address": "شميساني",
+      "items": [
+        {
+          "product": {
+            "id": "24",
+            "titleKey": "PRODUCTS.SUEDE_CHELSEA_BOOTS",
+            "categoryKey": "CATEGORIES.SHOES",
+            "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+            "price": 210,
+            "rating": 4.9
+          },
+          "quantity": 2
+        }
+      ],
+      "total": 420,
+      "date": "6/5/2026",
+      "status": "Pending",
+      "id": "PaQZmb2aews"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

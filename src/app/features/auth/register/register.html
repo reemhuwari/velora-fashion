@@ -1,0 +1,44 @@
+<section class="auth-page">
+
+  <div class="auth-card">
+
+    <h1>
+  {{ 'REGISTER_PAGE.TITLE' | translate }}
+</h1>
+
+    <p>
+  {{ 'REGISTER_PAGE.SUBTITLE' | translate }}
+</p>
+
+    <input
+  type="text"
+  [placeholder]="'REGISTER_PAGE.FULL_NAME' | translate"
+  [(ngModel)]="name"
+>
+
+    <input
+  type="email"
+  [placeholder]="'REGISTER_PAGE.EMAIL' | translate"
+  [(ngModel)]="email"
+>
+
+    <input
+  type="password"
+  [placeholder]="'REGISTER_PAGE.PASSWORD' | translate"
+  [(ngModel)]="password"
+>
+
+    <button (click)="register()">
+  {{ 'REGISTER_PAGE.CREATE_ACCOUNT' | translate }}
+</button>
+
+    <span
+      *ngIf="errorMessage"
+      class="error"
+    >
+      {{ errorMessage }}
+    </span>
+
+  </div>
+
+</section>

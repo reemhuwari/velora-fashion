@@ -1,0 +1,41 @@
+<div class="admin-layout">
+
+  <aside class="sidebar">
+
+    <h2>
+      Velora Admin
+    </h2>
+
+    <a
+      routerLink="/admin"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{
+        exact: true
+      }"
+    >
+      Dashboard
+    </a>
+
+    <a
+      routerLink="/admin/products"
+      routerLinkActive="active"
+    >
+      Products
+    </a>
+
+    <a
+      routerLink="/admin/orders"
+      routerLinkActive="active"
+    >
+      Orders
+    </a>
+
+  </aside>
+
+  <main class="admin-content">
+
+    <router-outlet />
+
+  </main>
+
+</div>

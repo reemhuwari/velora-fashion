@@ -1,0 +1,102 @@
+<div
+  class="product-card"
+  [routerLink]="['/product', product.id]"
+>
+  <div class="product-image">
+
+    <img
+      [src]="product.image"
+      [alt]="product.titleKey | translate"
+    >
+<span
+  *ngIf="product.isNew"
+  class="badge"
+>
+  {{ 'PRODUCT_CARD.NEW' | translate }}
+</span>
+
+    <button class="favorite-btn">
+      <i class="bi bi-heart"></i>
+    </button>
+
+  </div>
+
+  <div class="product-info">
+
+    
+  
+ <span class="category">
+  {{ product.categoryKey | translate }}
+</span>
+  
+
+
+    <h3>{{ product.titleKey | translate }}</h3>
+
+    <div class="rating">
+
+      <i class="bi bi-star-fill"></i>
+
+      <span>
+        {{ product.rating }}
+      </span>
+
+    </div>
+
+    <div class="price-row">
+
+      <div class="prices">
+
+        <span class="price">
+          ${{ product.price }}
+        </span>
+
+        <span
+          *ngIf="product.oldPrice"
+          class="old-price"
+        >
+          ${{ product.oldPrice }}
+        </span>
+
+      </div>
+<button
+  class="wishlist-btn"
+
+  (click)="
+    toggleWishlist($event)
+  "
+>
+
+  <i
+    class="bi"
+
+    [class.bi-heart]="
+      !wishlistService
+      .isInWishlist(product.id)
+    "
+
+    [class.bi-heart-fill]="
+      wishlistService
+      .isInWishlist(product.id)
+    "
+  ></i>
+
+</button>
+      <button
+  class="cart-btn"
+  (click)="addToCart($event)"
+>
+  <i class="bi bi-bag-plus"></i>
+</button>
+
+<span
+  *ngIf="showSuccessMessage"
+  class="added-message"
+>
+  {{ 'PRODUCT_CARD.ADDED_TO_CART' | translate }}
+</span>
+    </div>
+
+  </div>
+
+</div>

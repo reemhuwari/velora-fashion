@@ -1,0 +1,184 @@
+{
+  "HOME": "Home",
+  "SHOP": "Shop",
+  "PROFILE": "Profile",
+  "ORDERS": "Orders",
+  "LOGIN": "Login",
+  "REGISTER": "Register",
+  "LOGOUT": "Logout",
+  "WISHLIST": "Wishlist",
+
+  "WOMEN": "Women",
+  "MEN": "Men",
+  "NEW_ARRIVALS": "New Arrivals",
+  "BRANDS": "Brands",
+
+  "ENGLISH": "English",
+  "ARABIC": "Arabic",
+
+  "EMPTY_CART": "Your cart is empty",
+  "ADD_PRODUCTS_TO_CONTINUE": "Add products to continue shopping",
+  "SHOPPING_CART": "Shopping Cart",
+  "ORDER_SUMMARY": "Order Summary",
+  "TOTAL": "Total",
+
+  "CHECKOUT": {
+    "TITLE": "Checkout",
+    "FULL_NAME": "Full Name",
+    "PHONE": "Phone Number",
+    "CITY": "City",
+    "ADDRESS": "Address",
+    "PAYMENT_METHOD": "Payment Method",
+    "CREDIT_CARD": "Credit Card",
+    "CASH_ON_DELIVERY": "Cash On Delivery",
+    "PLACE_ORDER": "Place Order",
+    "ERROR_FILL_FIELDS": "Please fill all fields",
+    "SUCCESS_ORDER": "Order placed successfully"
+  },
+
+  "HERO_TAG": "NEW COLLECTION 2026",
+  "HERO_TITLE": "Elevate Your Fashion Experience",
+  "HERO_DESC": "Luxury streetwear and modern fashion crafted for bold personalities.",
+  "SHOP_NOW": "Shop Now",
+
+  "PREMIUM_COLLECTION": "PREMIUM COLLECTION",
+  "TRENDING_PRODUCTS": "Trending Products",
+  "LOADING": "Loading Products..."
+  ,
+  "ORDERS_PAGE": {
+  "TITLE": "Your Orders",
+  "COUNT": "Orders",
+  "EMPTY": "No Orders Yet",
+  "ORDER": "Order"
+},
+"PRODUCT_DETAILS": {
+  "DESCRIPTION": "Premium quality fashion item designed for modern luxury lovers and streetwear fans.",
+  "SIZE": "Size",
+  "COLOR": "Color",
+  "ADD_TO_CART": "Add To Cart",
+  "CUSTOMER_REVIEWS": "Customer Reviews",
+   "ADDED_SUCCESSFULLY": "Product added to cart successfully",
+  "YOUR_NAME": "Your Name",
+  "WRITE_REVIEW": "Write your review",
+  "FIVE_STARS": "5 Stars",
+  "FOUR_STARS": "4 Stars",
+  "THREE_STARS": "3 Stars",
+  "SUBMIT_REVIEW": "Submit Review",
+  "REVIEW_ADDED": "Review added successfully"
+},
+
+  "CART": "Cart",
+
+  "PROFILE_PAGE": {
+    "PERSONAL_INFORMATION": "Personal Information",
+    "FULL_NAME": "Full Name",
+    "EMAIL": "Email",
+    "PHONE_NUMBER": "Phone Number",
+    "CITY": "City",
+    "SAVE_CHANGES": "Save Changes",
+    "SUCCESS_UPDATE": "Profile updated successfully"
+  },
+"SHOP_PAGE": {
+  "SEARCH": "Search",
+  "SEARCH_PLACEHOLDER": "Search products...",
+  "CATEGORIES": "Categories",
+  "SORT_BY": "Sort By",
+  "DEFAULT": "Default",
+  "PRICE_LOW_HIGH": "Price Low To High",
+  "PRICE_HIGH_LOW": "Price High To Low",
+  "TOP_RATED": "Top Rated",
+  "FASHION_COLLECTION": "Fashion Collection",
+  "PRODUCTS_FOUND": "Products Found",
+  "ALL": "All",
+"STREETWEAR": "Streetwear",
+"WINTER": "Winter",
+"SHOES": "Shoes",
+"LUXURY": "Luxury"
+},
+"CATEGORIES": {
+  "ALL": "All",
+  "STREETWEAR": "Streetwear",
+  "WINTER": "Winter",
+  "SHOES": "Shoes",
+  "LUXURY": "Luxury"
+},
+"WISHLIST_PAGE": {
+  "TITLE": "Your Wishlist",
+  "ITEMS": "Items",
+  "EMPTY": "Wishlist is empty"
+},
+"LOGIN_PAGE": {
+  "TITLE": "Welcome Back",
+  "SUBTITLE": "Login to your account",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "LOGIN_BUTTON": "Login",
+  "INVALID_CREDENTIALS": "Invalid email or password"
+},
+"REGISTER_PAGE": {
+  "TITLE": "Create Account",
+  "SUBTITLE": "Join the Velora fashion experience",
+  "FULL_NAME": "Full Name",
+  "EMAIL": "Email",
+  "PASSWORD": "Password",
+  "CREATE_ACCOUNT": "Create Account",
+  "FILL_ALL_FIELDS": "Please fill all fields"
+},
+"FOOTER": {
+  "COPYRIGHT": "© 2026 Velora Fashion",
+  "RIGHTS": "All Rights Reserved"
+},
+"PRODUCT_CARD": {
+  "NEW": "NEW",
+  "ADDED_TO_CART": "Added"
+},
+"QUICK_VIEW": {
+  "ADD_TO_CART": "Add To Cart",
+  "ADDED_TO_CART": "Added to cart",
+  "ADDED_TO_WISHLIST": "Added to wishlist"
+},
+
+  
+  
+  "PRODUCTS": {
+    "HOODIE_TITLE":"Oversized Luxury Hoodie",
+    "MINIMAL_BLACK_JACKET": "Minimal Black Jacket",
+    "MODERN_WHITE_SNEAKERS": "Modern White Sneakers",
+    "ELEGANT_BEIGE_COAT": "Elegant Beige Coat",
+    
+  "CLASSIC_WHITE_TSHIRT": "Classic White T-Shirt",
+  "PREMIUM_DENIM_JEANS": "Premium Denim Jeans",
+  "WOOL_WINTER_SWEATER": "Wool Winter Sweater",
+  "LEATHER_ANKLE_BOOTS": "Leather Ankle Boots",
+  "DESIGNER_BLAZER": "Designer Blazer",
+  "OVERSIZED_HOODIE": "Oversized Hoodie",
+   "CASUAL_LINEN_SHIRT": "Casual Linen Shirt",
+  "SLIM_FIT_CHINOS": "Slim Fit Chinos",
+  "PUFFER_WINTER_JACKET": "Puffer Winter Jacket",
+  "CASHMERE_TURTLENECK": "Cashmere Turtleneck",
+  "RUNNING_SNEAKERS": "Running Sneakers",
+  "LEATHER_LOAFERS": "Leather Loafers",
+ 
+  "SILK_EVENING_DRESS": "Silk Evening Dress",
+  "CROPPED_DENIM_JACKET": "Cropped Denim Jacket",
+  "GRAPHIC_PRINT_TSHIRT": "Graphic Print T-Shirt",
+  "FLEECE_ZIP_HOODIE": "Fleece Zip Hoodie",
+  "LONG_WOOL_COAT": "Long Wool Coat",
+  "HIGH_TOP_SNEAKERS": "High Top Sneakers",
+  "SUEDE_CHELSEA_BOOTS": "Suede Chelsea Boots",
+  "PREMIUM_VELVET_BLAZER": "Premium Velvet Blazer",
+  "EMBROIDERED_EVENING_GOWN": "Embroidered Evening Gown"
+
+  },
+  "ADMIN": {
+  "PRODUCTS_MANAGEMENT": "Products Management",
+  "ADD_PRODUCT": "Add Product",
+  "TITLE": "Title",
+  "PRICE": "Price",
+  "IMAGE_URL": "Image URL",
+  "CATEGORY": "Category",
+  "DESCRIPTION": "Description",
+  "DELETE": "Delete"
+}
+
+}

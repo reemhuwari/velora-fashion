@@ -1,0 +1,183 @@
+{
+  "HOME": "الرئيسية",
+  "SHOP": "المتجر",
+  "PROFILE": "الملف الشخصي",
+  "ORDERS": "الطلبات",
+  "LOGIN": "تسجيل الدخول",
+  "REGISTER": "إنشاء حساب",
+  "LOGOUT": "تسجيل خروج",
+  "WISHLIST": "المفضلة",
+  "WOMEN": "نساء",
+  "MEN": "رجال",
+  "NEW_ARRIVALS": "وصل حديثًا",
+  "BRANDS": "العلامات التجارية",
+  
+  "EMPTY_CART": "سلة التسوق فارغة",
+  "ADD_PRODUCTS_TO_CONTINUE": "أضف منتجات لمتابعة التسوق",
+  "SHOPPING_CART": "سلة التسوق",
+  
+   "ORDER_SUMMARY": "ملخص الطلب",
+  "TOTAL": "المجموع",
+ "CHECKOUT": {
+  "TITLE": "إتمام الطلب",
+  "FULL_NAME": "الاسم الكامل",
+  "PHONE": "رقم الهاتف",
+  "CITY": "المدينة",
+  "ADDRESS": "العنوان",
+  "PAYMENT_METHOD": "طريقة الدفع",
+  "CREDIT_CARD": "بطاقة ائتمانية",
+  "CASH_ON_DELIVERY": "الدفع عند الاستلام",
+  "PLACE_ORDER": "إتمام الطلب",
+ 
+  "ERROR_FILL_FIELDS": "الرجاء تعبئة جميع الحقول",
+  "SUCCESS_ORDER": "تم إرسال الطلب بنجاح"
+},
+    "ENGLISH":"الانجليزية",
+    "ARABIC":"العربية",
+   
+    "ERROR_FILL_FIELDS": "الرجاء تعبئة جميع الحقول",
+    "SUCCESS_ORDER": "تم إرسال الطلب بنجاح",
+  "HERO_TAG": "مجموعة جديدة 2026",
+  "HERO_TITLE": "ارتقِ بتجربة الموضة الخاصة بك",
+  "HERO_DESC": "أزياء فاخرة وعصرية مصممة لشخصيات جريئة.",
+  "SHOP_NOW": "تسوق الآن",
+
+  "PREMIUM_COLLECTION": "مجموعة مميزة",
+  "TRENDING_PRODUCTS": "المنتجات الرائجة",
+  "LOADING": "جاري تحميل المنتجات...",
+  "ORDERS_PAGE": {
+  "TITLE": "طلباتي",
+  "COUNT": "طلب",
+  "EMPTY": "لا توجد طلبات بعد",
+  "ORDER": "طلب"
+},
+"PRODUCT_DETAILS": {
+  "DESCRIPTION": "منتج أزياء فاخر عالي الجودة مصمم لعشاق الموضة العصرية وأزياء الشارع.",
+  "SIZE": "المقاس",
+  "COLOR": "اللون",
+  "ADD_TO_CART": "أضف إلى السلة",
+   "ADDED_SUCCESSFULLY": "تمت إضافة المنتج إلى السلة بنجاح",
+  "CUSTOMER_REVIEWS": "تقييمات العملاء",
+  "YOUR_NAME": "اسمك",
+  "WRITE_REVIEW": "اكتب تقييمك",
+  "FIVE_STARS": "5 نجوم",
+  "FOUR_STARS": "4 نجوم",
+  "THREE_STARS": "3 نجوم",
+  "SUBMIT_REVIEW": "إرسال التقييم",
+  "REVIEW_ADDED": "تمت إضافة التقييم بنجاح"
+},
+
+  "CART": "السلة",
+
+  "PROFILE_PAGE": {
+    "PERSONAL_INFORMATION": "المعلومات الشخصية",
+    "FULL_NAME": "الاسم الكامل",
+    "EMAIL": "البريد الإلكتروني",
+    "PHONE_NUMBER": "رقم الهاتف",
+    "CITY": "المدينة",
+    "SAVE_CHANGES": "حفظ التعديلات",
+    "SUCCESS_UPDATE": "تم تحديث الملف الشخصي بنجاح"
+  },"SHOP_PAGE": {
+  "SEARCH": "بحث",
+  "SEARCH_PLACEHOLDER": "ابحث عن المنتجات...",
+  "CATEGORIES": "التصنيفات",
+  "SORT_BY": "ترتيب حسب",
+  "DEFAULT": "افتراضي",
+  "PRICE_LOW_HIGH": "السعر من الأقل للأعلى",
+  "PRICE_HIGH_LOW": "السعر من الأعلى للأقل",
+  "TOP_RATED": "الأعلى تقييماً",
+  "FASHION_COLLECTION": "مجموعة الأزياء",
+  "PRODUCTS_FOUND": "منتج",
+  "ALL": "الكل",
+"STREETWEAR": "أزياء الشارع",
+"WINTER": "شتوي",
+"SHOES": "أحذية",
+"LUXURY": "فاخر"
+},
+"CATEGORIES": {
+  "ALL": "الكل",
+  "STREETWEAR": "أزياء الشارع",
+  "WINTER": "شتوي",
+  "SHOES": "أحذية",
+  "LUXURY": "فاخر"
+},
+"WISHLIST_PAGE": {
+  "TITLE": "المفضلة",
+  "ITEMS": "عنصر",
+  "EMPTY": "قائمة المفضلة فارغة"
+},
+"LOGIN_PAGE": {
+  "TITLE": "مرحباً بعودتك",
+  "SUBTITLE": "سجل الدخول إلى حسابك",
+  "EMAIL": "البريد الإلكتروني",
+  "PASSWORD": "كلمة المرور",
+  "LOGIN_BUTTON": "تسجيل الدخول",
+  "INVALID_CREDENTIALS": "البريد الإلكتروني أو كلمة المرور غير صحيحة"
+}
+,
+"REGISTER_PAGE": {
+  "TITLE": "إنشاء حساب",
+  "SUBTITLE": "انضم إلى تجربة Velora للأزياء",
+  "FULL_NAME": "الاسم الكامل",
+  "EMAIL": "البريد الإلكتروني",
+  "PASSWORD": "كلمة المرور",
+  "CREATE_ACCOUNT": "إنشاء حساب",
+  "FILL_ALL_FIELDS": "الرجاء تعبئة جميع الحقول"
+},
+"FOOTER": {
+  "COPYRIGHT": "© 2026 فيلورا للأزياء",
+  "RIGHTS": "جميع الحقوق محفوظة"
+},
+"PRODUCT_CARD": {
+  "NEW": "جديد",
+  "ADDED_TO_CART": "تمت الإضافة"
+},
+"QUICK_VIEW": {
+  "ADD_TO_CART": "أضف إلى السلة",
+  "ADDED_TO_CART": "تمت الإضافة إلى السلة",
+  "ADDED_TO_WISHLIST": "تمت الإضافة إلى المفضلة"
+},
+
+  
+  
+  "PRODUCTS": {
+    "HOODIE_TITLE":"هودي أوفرفايسد فاخر",
+    "MINIMAL_BLACK_JACKET": "جاكيت أسود بتصميم بسيط",
+    "MODERN_WHITE_SNEAKERS": "حذاء رياضي أبيض عصري",
+    "ELEGANT_BEIGE_COAT": "معطف بيج أنيق",
+    
+  "CLASSIC_WHITE_TSHIRT": "تي شيرت أبيض كلاسيكي",
+  "PREMIUM_DENIM_JEANS": "بنطال جينز فاخر",
+  "WOOL_WINTER_SWEATER": "كنزة شتوية صوف",
+  "LEATHER_ANKLE_BOOTS": "بوت جلدي قصير",
+  "DESIGNER_BLAZER": "بليزر فاخر",
+  "OVERSIZED_HOODIE": "هودي واسع",
+   "CASUAL_LINEN_SHIRT": "قميص كتان كاجوال",
+  "SLIM_FIT_CHINOS": "بنطال تشينو بقصة ضيقة",
+  "PUFFER_WINTER_JACKET": "جاكيت شتوي مبطن",
+  "CASHMERE_TURTLENECK": "كنزة كشمير بياقة عالية",
+  "RUNNING_SNEAKERS": "حذاء رياضي للجري",
+  "LEATHER_LOAFERS": "حذاء جلدي رسمي",
+  
+  "SILK_EVENING_DRESS": "فستان سهرة حريري",
+  "CROPPED_DENIM_JACKET": "جاكيت جينز قصير",
+  "GRAPHIC_PRINT_TSHIRT": "تي شيرت بطبعة عصرية",
+  "FLEECE_ZIP_HOODIE": "هودي صوفي بسحاب",
+  "LONG_WOOL_COAT": "معطف صوف طويل",
+  "HIGH_TOP_SNEAKERS": "حذاء رياضي مرتفع",
+  "SUEDE_CHELSEA_BOOTS": "بوت تشيلسي شمواه",
+  "PREMIUM_VELVET_BLAZER": "بليزر مخملي فاخر",
+  "EMBROIDERED_EVENING_GOWN": "فستان سهرة مطرز"
+
+  },
+  "ADMIN": {
+  "PRODUCTS_MANAGEMENT": "إدارة المنتجات",
+  "ADD_PRODUCT": "إضافة منتج",
+  "TITLE": "اسم المنتج",
+  "PRICE": "السعر",
+  "IMAGE_URL": "رابط الصورة",
+  "CATEGORY": "الفئة",
+  "DESCRIPTION": "الوصف",
+  "DELETE": "حذف"
+}
+}

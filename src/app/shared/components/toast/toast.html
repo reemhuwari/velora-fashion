@@ -1,0 +1,49 @@
+<div class="toast-wrapper">
+
+  <div
+    *ngFor="
+      let toast of
+      toastService.toasts()
+    "
+    class="toast"
+
+    [class.success]="
+      toast.type === 'success'
+    "
+
+    [class.error]="
+      toast.type === 'error'
+    "
+
+    [class.info]="
+      toast.type === 'info'
+    "
+  >
+
+    <div class="toast-content">
+
+      <i
+        class="bi"
+
+        [class.bi-check-circle]="
+          toast.type === 'success'
+        "
+
+        [class.bi-x-circle]="
+          toast.type === 'error'
+        "
+
+        [class.bi-info-circle]="
+          toast.type === 'info'
+        "
+      ></i>
+
+      <span>
+        {{ toast.message }}
+      </span>
+
+    </div>
+
+  </div>
+
+</div>

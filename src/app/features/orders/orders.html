@@ -1,0 +1,97 @@
+<section class="orders-page">
+
+  <div class="orders-header">
+
+    <h2>
+      {{ 'ORDERS_PAGE.TITLE' | translate }}
+    </h2>
+
+    <p>
+      {{ ordersService.orders().length }}
+      {{ 'ORDERS_PAGE.COUNT' | translate }}
+    </p>
+
+  </div>
+
+  <div
+    *ngIf="
+      ordersService.orders().length === 0
+    "
+    class="empty-orders"
+  >
+
+    <i class="bi bi-bag"></i>
+
+    <h3>
+      {{ 'ORDERS_PAGE.EMPTY' | translate }}
+    </h3>
+
+  </div>
+
+  <div
+    *ngFor="
+      let order of
+      ordersService.orders()
+    "
+    class="order-card"
+  >
+
+    <div class="order-top">
+
+      <div>
+
+        <h3>
+          {{ 'ORDERS_PAGE.ORDER' | translate }}
+          #{{ order.id }}
+        </h3>
+
+        <p>
+          {{ order.date }}
+        </p>
+
+      </div>
+
+      <span class="status">
+
+        {{ order.status }}
+
+      </span>
+
+    </div>
+
+    <div
+      *ngFor="
+        let item of order.items
+      "
+      class="order-item"
+    >
+
+      <span>
+  {{ item.product.titleKey | translate }}
+  x{{ item.quantity }}
+</span>
+
+      <strong>
+        ${{
+          item.product.price *
+          item.quantity
+        }}
+      </strong>
+
+    </div>
+
+    <div class="total-row">
+
+      <span>
+        {{ 'TOTAL' | translate }}
+      </span>
+
+      <strong>
+        ${{ order.total }}
+      </strong>
+
+    </div>
+
+  </div>
+
+</section>

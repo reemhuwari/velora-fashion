@@ -1,0 +1,100 @@
+<h1>
+  {{ 'ADMIN.PRODUCTS_MANAGEMENT' | translate }}
+</h1>
+
+<div class="admin-grid">
+
+  <div class="product-form">
+
+    <h2>
+      {{ 'ADMIN.ADD_PRODUCT' | translate }}
+    </h2>
+
+    <input
+      type="text"
+      [placeholder]="
+        'ADMIN.TITLE' | translate
+      "
+      [(ngModel)]="title"
+    >
+
+    <input
+      type="number"
+      [placeholder]="
+        'ADMIN.PRICE' | translate
+      "
+      [(ngModel)]="price"
+    >
+
+    <input
+      type="text"
+      [placeholder]="
+        'ADMIN.IMAGE_URL' | translate
+      "
+      [(ngModel)]="image"
+    >
+
+    <input
+      type="text"
+      [placeholder]="
+        'ADMIN.CATEGORY' | translate
+      "
+      [(ngModel)]="category"
+    >
+
+    <textarea
+      [placeholder]="
+        'ADMIN.DESCRIPTION' | translate
+      "
+      [(ngModel)]="description"
+    ></textarea>
+
+    <button
+      (click)="addProduct()"
+    >
+      {{ 'ADMIN.ADD_PRODUCT' | translate }}
+    </button>
+
+  </div>
+
+  <div class="products-table">
+
+    <div
+      *ngFor="
+        let product of products()
+      "
+      class="table-row"
+    >
+
+      <img
+        [src]="product.image"
+      >
+
+      <div class="info">
+
+        <h3>
+          {{ product.titleKey | translate }}
+        </h3>
+
+        <p>
+          {{ product.categoryKey | translate }}
+        </p>
+
+      </div>
+
+      <span>
+        ${{ product.price }}
+      </span>
+
+      <button
+        class="delete-btn"
+        (click)="deleteProduct(product.id)"
+      >
+        {{ 'ADMIN.DELETE' | translate }}
+      </button>
+
+    </div>
+
+  </div>
+
+</div>

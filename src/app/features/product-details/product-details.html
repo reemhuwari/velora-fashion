@@ -1,0 +1,221 @@
+<section
+  *ngIf="product"
+  class="details-page"
+>
+
+  <div class="details-grid">
+
+    <div class="image-section">
+
+      <img
+        [src]="product()?.image"
+        [alt]="product()?.titleKey"
+      >
+
+    </div>
+
+    <div class="info-section">
+
+    <span class="category">
+  {{ product()!.titleKey | translate }}
+</span>
+
+      <h1>
+  {{ product()!.titleKey | translate }}
+</h1>
+
+      <div class="rating">
+
+        <i class="bi bi-star-fill"></i>
+
+        <span>
+          {{ product()?.rating }}
+        </span>
+
+      </div>
+
+      <div class="prices">
+
+        <span class="price">
+          ${{ product()?.price }}
+        </span>
+
+        <span
+          *ngIf="product()?.oldPrice"
+          class="old-price"
+        >
+          ${{ product()?.oldPrice }}
+        </span>
+
+      </div>
+
+     
+
+      <p class="description">
+  {{ 'PRODUCT_DETAILS.DESCRIPTION' | translate }}
+
+
+      </p>
+
+      <div class="selector">
+
+        <h4>
+  {{ 'PRODUCT_DETAILS.SIZE' | translate }}
+</h4>
+
+        <div class="sizes">
+
+          <button
+  *ngFor="let size of sizes"
+  [class.active]="selectedSize === size"
+  (click)="selectedSize = size"
+>
+  {{ size }}
+</button>
+
+        </div>
+
+      </div>
+
+      <div class="selector">
+
+       <h4>
+  {{ 'PRODUCT_DETAILS.COLOR' | translate }}
+</h4>
+
+        <div class="colors">
+
+          <button
+            *ngFor="
+              let color of colors
+            "
+            [style.background]="color"
+            [class.active]="
+              selectedColor === color
+            "
+            (click)="selectedColor = color"
+          ></button>
+
+        </div>
+
+      </div>
+
+      <div class="actions">
+
+        <div class="quantity-box">
+
+          <button
+            (click)="decreaseQty()"
+          >
+            -
+          </button>
+
+          <span>
+            {{ quantity }}
+          </span>
+
+          <button
+            (click)="increaseQty()"
+          >
+            +
+          </button>
+
+        </div>
+
+        <button class="add-cart-btn"(click)="addToCart()">
+
+          <i class="bi bi-bag-plus"></i>
+
+          {{ 'PRODUCT_DETAILS.ADD_TO_CART' | translate }}
+         
+<div
+  *ngIf="showSuccessMessage"
+  class="success-message"
+>
+  <i class="bi bi-check-circle-fill"></i>
+
+  {{ 'PRODUCT_DETAILS.ADDED_SUCCESSFULLY' | translate }}
+</div>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+<div class="reviews-section">
+
+ <h2>
+  {{ 'PRODUCT_DETAILS.CUSTOMER_REVIEWS' | translate }}
+</h2>
+
+  <div class="review-form">
+
+   <input
+  type="text"
+  [placeholder]="
+    'PRODUCT_DETAILS.YOUR_NAME'
+      | translate
+  "
+  [(ngModel)]="reviewName"
+/>
+   <textarea
+  [placeholder]="
+    'PRODUCT_DETAILS.WRITE_REVIEW'
+      | translate
+  "
+  [(ngModel)]="reviewComment"
+></textarea>
+    <select
+      [(ngModel)]="reviewRating"
+    >
+
+      <option value="5">
+  {{ 'PRODUCT_DETAILS.FIVE_STARS' | translate }}
+</option>
+
+<option value="4">
+  {{ 'PRODUCT_DETAILS.FOUR_STARS' | translate }}
+</option>
+
+<option value="3">
+  {{ 'PRODUCT_DETAILS.THREE_STARS' | translate }}
+</option>
+
+    </select>
+
+    <button
+  (click)="addReview()"
+>
+  {{ 'PRODUCT_DETAILS.SUBMIT_REVIEW' | translate }}
+</button>
+
+  </div>
+
+  <div
+    *ngFor="
+      let review of
+      product()?.reviews
+    "
+    class="review-card"
+  >
+
+    <h3>
+      {{ review.username }}
+    </h3>
+
+    <div class="review-rating">
+
+      ⭐ {{ review.rating }}
+
+    </div>
+
+    <p>
+      {{ review.comment }}
+    </p>
+
+  </div>
+
+</div>
+</section>

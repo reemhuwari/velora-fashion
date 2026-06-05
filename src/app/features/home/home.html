@@ -1,0 +1,71 @@
+<section class="hero">
+ <video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+  >
+    <source
+      src="videos/fashion.mp4"
+      type="video/mp4"
+    />
+  </video>
+
+  <div class="hero-overlay"></div>
+  <div class="hero__content">
+
+    <span class="hero__tag">
+      {{ 'HERO_TAG' | translate }}
+    </span>
+
+    <h1>
+      {{ 'HERO_TITLE' | translate }}
+    </h1>
+
+    <p>
+      {{ 'HERO_DESC' | translate }}
+    </p>
+
+    <button routerLink="/shop">
+  {{ 'SHOP_NOW' | translate }}
+</button>
+
+  </div>
+
+</section>
+
+<section class="products-section">
+
+  <div class="section-header">
+
+    <span>
+      {{ 'PREMIUM_COLLECTION' | translate }}
+    </span>
+
+    <h2>
+      {{ 'TRENDING_PRODUCTS' | translate }}
+    </h2>
+
+  </div>
+
+  <div
+    *ngIf="isLoading"
+    class="loading-state"
+  >
+    {{ 'LOADING' | translate }}
+  </div>
+
+  <div
+    *ngIf="!isLoading"
+    class="products-grid"
+  >
+
+    <app-product-card
+      *ngFor="let product of products"
+      [product]="product"
+    />
+
+  </div>
+
+</section>

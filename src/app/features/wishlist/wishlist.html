@@ -1,0 +1,48 @@
+<section class="wishlist-page">
+
+  <div class="wishlist-header">
+
+    <h2>
+  {{ 'WISHLIST_PAGE.TITLE' | translate }}
+</h2>
+
+<p>
+  {{ wishlistService.totalItems() }}
+  {{ 'WISHLIST_PAGE.ITEMS' | translate }}
+</p>
+  </div>
+
+  <div
+    *ngIf="
+      wishlistService
+      .wishlistItems()
+      .length === 0
+    "
+    class="empty-state"
+  >
+
+    <i class="bi bi-heart"></i>
+
+   <h3>
+  {{ 'WISHLIST_PAGE.EMPTY' | translate }}
+</h3>
+
+  </div>
+
+  <div class="wishlist-grid">
+
+    <app-product-card
+
+      *ngFor="
+        let item of
+        wishlistService
+        .wishlistItems()
+      "
+
+      [product]="item.product"
+
+    />
+
+  </div>
+
+</section>

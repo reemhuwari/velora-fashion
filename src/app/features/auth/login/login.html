@@ -1,0 +1,38 @@
+<section class="auth-page">
+
+  <div class="auth-card">
+
+    <h1>
+  {{ 'LOGIN_PAGE.TITLE' | translate }}
+</h1>
+
+<p>
+  {{ 'LOGIN_PAGE.SUBTITLE' | translate }}
+</p>
+
+    <input
+  type="email"
+  [placeholder]="'LOGIN_PAGE.EMAIL' | translate"
+  [(ngModel)]="email"
+>
+
+    <input
+  type="password"
+  [placeholder]="'LOGIN_PAGE.PASSWORD' | translate"
+  [(ngModel)]="password"
+>
+
+    <button (click)="login()">
+  {{ 'LOGIN_PAGE.LOGIN_BUTTON' | translate }}
+</button>
+
+    <span
+      *ngIf="errorMessage"
+      class="error"
+    >
+      {{ errorMessage }}
+    </span>
+
+  </div>
+
+</section>

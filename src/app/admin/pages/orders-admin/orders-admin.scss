@@ -1,0 +1,54 @@
+.orders-table {
+
+  margin-top: 2rem;
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 1.5rem;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+.table-header,
+.table-row {
+
+  display: grid;
+
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+
+  padding: 1rem;
+
+  align-items: center;
+
+}
+
+.table-header {
+
+  font-weight: bold;
+
+  border-bottom: 2px solid #eee;
+
+}
+
+.table-row {
+
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.pending {
+  color: orange;
+  font-weight: 600;
+}
+
+.shipped {
+  color: blue;
+  font-weight: 600;
+}
+
+.delivered {
+  color: green;
+  font-weight: 600;
+}

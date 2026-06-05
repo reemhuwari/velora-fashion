@@ -1,0 +1,151 @@
+<section class="cart-page">
+
+  <div
+    *ngIf="
+      cartService.cartItems().length === 0
+    "
+    class="empty-cart"
+  >
+
+    <i class="bi bi-bag-x"></i>
+
+    <h2>
+
+      {{ 'EMPTY_CART' | translate }}
+
+    </h2>
+
+    <p>
+
+      {{
+        'ADD_PRODUCTS_TO_CONTINUE'
+        | translate
+      }}
+
+    </p>
+
+  </div>
+
+  <div class="cart-container">
+
+    <div class="cart-items">
+
+      <h2>
+
+        {{ 'SHOPPING_CART' | translate }}
+
+      </h2>
+
+      <div
+        *ngFor="
+          let item
+          of cartService.cartItems()
+        "
+        class="cart-item"
+      >
+
+        <img
+  [src]="item.product.image"
+  [alt]="item.product.titleKey | translate"
+/>
+
+        <div class="item-info">
+
+          
+            <h3>
+  {{ item.product.titleKey | translate }}
+</h3>
+
+          <p>
+            ${{ item.product.price }}
+          </p>
+
+          <div class="quantity-controls">
+
+            <button
+              (click)="
+                cartService
+                .decreaseQuantity(
+                  item.product.id
+                )
+              "
+            >
+              -
+            </button>
+
+            <span>
+              {{ item.quantity }}
+            </span>
+
+            <button
+              (click)="
+                cartService
+                .increaseQuantity(
+                  item.product.id
+                )
+              "
+            >
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+        <button
+          class="remove-btn"
+          (click)="
+            cartService.removeItem(
+              item.product.id
+            )
+          "
+        >
+
+          <i class="bi bi-trash"></i>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="summary-card">
+
+      <h3>
+
+        {{ 'ORDER_SUMMARY' | translate }}
+
+      </h3>
+
+      <div class="summary-row">
+
+        <span>
+
+          {{ 'TOTAL' | translate }}
+
+        </span>
+
+        <strong>
+
+          ${{
+            cartService.totalPrice()
+          }}
+
+        </strong>
+
+      </div>
+
+      <button
+        class="checkout-btn"
+        routerLink="/checkout"
+      >
+
+        {{ 'CHECKOUT.TITLE' | translate }}
+
+      </button>
+
+    </div>
+
+  </div>
+
+</section>

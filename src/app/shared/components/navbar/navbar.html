@@ -1,0 +1,218 @@
+<header class="navbar">
+
+  <div class="navbar__logo">
+    <span>VELORA</span>
+  </div>
+
+  <nav class="navbar__links">
+
+    <a routerLink="/">
+     {{ 'HOME' | translate }}
+    </a>
+
+    <a routerLink="/shop">
+      {{ 'SHOP' | translate }}
+    </a>
+
+    <a href="#">
+       {{ 'WOMEN' | translate }}
+    </a>
+
+    <a href="#">
+     {{ 'MEN' | translate }}
+    </a>
+
+    <a href="#">
+      {{ 'NEW_ARRIVALS' | translate }}
+    </a>
+
+    <a href="#">
+      {{ 'BRANDS' | translate }}
+    </a>
+
+  </nav>
+
+  <div class="navbar__actions">
+
+  
+
+    <ng-container
+      *ngIf="!authService.currentUser()"
+    >
+
+      <a
+        routerLink="/login"
+        class="login-link"
+      >
+        {{ 'LOGIN' | translate }}
+      </a>
+
+      <a
+        routerLink="/register"
+        class="register-link"
+      >
+        {{ 'REGISTER' | translate }}
+      </a>
+
+    </ng-container>
+
+    <!-- User Dropdown -->
+
+    <div
+      *ngIf="authService.currentUser()"
+      class="user-dropdown"
+    >
+
+      <button class="user-trigger">
+
+        <i class="bi bi-person-circle"></i>
+
+        <span class="user-name">
+
+          {{
+            authService.currentUser()?.name
+          }}
+
+        </span>
+
+        <i class="bi bi-chevron-down"></i>
+
+      </button>
+
+      <div class="dropdown-menu">
+
+        <a
+          routerLink="/profile"
+          class="dropdown-item"
+        >
+
+          <i class="bi bi-person"></i>
+
+          {{ 'PROFILE' | translate }}
+
+        </a>
+
+        <a
+          routerLink="/orders"
+          class="dropdown-item"
+        >
+
+          <i class="bi bi-box-seam"></i>
+
+          {{ 'ORDERS' | translate }}
+
+        </a>
+
+        <a
+          routerLink="/wishlist"
+          class="dropdown-item"
+        >
+
+          <i class="bi bi-heart"></i>
+
+          {{ 'WISHLIST' | translate }}
+
+        </a>
+        <div class="language-switch">
+
+  <button
+    (click)="changeLanguage('en')"
+  >
+    {{'ENGLISH' | translate}}
+  </button>
+
+  <button
+    (click)="changeLanguage('ar')"
+  >
+     {{'ARABIC' | translate}}
+  </button>
+
+</div>
+        <button
+          class="dropdown-item logout-item"
+          (click)="logout()"
+        >
+
+          <i class="bi bi-box-arrow-right"></i>
+
+          {{ 'LOGOUT' | translate }}
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Search -->
+
+    <button class="icon-btn">
+
+      <i class="bi bi-search"></i>
+
+    </button>
+
+    <!-- Wishlist -->
+
+    <button
+      class="icon-btn"
+      routerLink="/wishlist"
+    >
+
+      <i class="bi bi-heart"></i>
+
+      <span class="cart-count">
+
+        {{
+          wishlistService.totalItems()
+        }}
+
+      </span>
+
+    </button>
+
+    <!-- Cart -->
+
+    <button
+      *ngIf="authService.currentUser()"
+      class="icon-btn cart-btn"
+      routerLink="/cart"
+    >
+
+      <i class="bi bi-bag"></i>
+
+      <span class="cart-count">
+
+        {{
+          cartService.totalItems()
+        }}
+
+      </span>
+
+    </button>
+
+    <!-- Theme Toggle -->
+
+    <button
+      class="icon-btn"
+      (click)="
+        themeService.toggleTheme()
+      "
+    >
+
+      <i
+        class="bi"
+
+        [class.bi-sun]="
+          themeService.darkMode()
+        "
+
+        [class.bi-moon]="
+          !themeService.darkMode()
+        "
+      ></i>
+
+    </button>
+
+  </div>
+
+</header>
