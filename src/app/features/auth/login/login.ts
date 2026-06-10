@@ -6,10 +6,12 @@ import {
   FormsModule
 } from '@angular/forms';
 import {
-  TranslateModule
+  TranslateModule,
+  TranslatePipe
 } from '@ngx-translate/core';
 import {
-  Router
+  Router,
+  RouterModule
 } from '@angular/router';
 
 import {
@@ -23,7 +25,8 @@ import {
   imports: [
     CommonModule,
     FormsModule,
-  TranslateModule
+  TranslateModule,
+  RouterModule
   ],
 
   templateUrl: './login.html',

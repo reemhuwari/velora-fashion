@@ -1,43 +1,59 @@
 <section class="auth-page">
 
-  <div class="auth-card">
+  <div class="auth-image">
+    <div class="overlay">
+      <h1>Join Our Fashion World</h1>
+      <p>
+        Create your account and discover the latest trends,
+        exclusive collections, and special offers.
+      </p>
+    </div>
+  </div>
 
-    <h1>
-  {{ 'REGISTER_PAGE.TITLE' | translate }}
-</h1>
+  <div class="auth-form">
 
-    <p>
-  {{ 'REGISTER_PAGE.SUBTITLE' | translate }}
-</p>
+    <div class="auth-card">
 
-    <input
-  type="text"
-  [placeholder]="'REGISTER_PAGE.FULL_NAME' | translate"
-  [(ngModel)]="name"
->
+      <h1>{{ 'REGISTER_PAGE.TITLE' | translate }}</h1>
 
-    <input
-  type="email"
-  [placeholder]="'REGISTER_PAGE.EMAIL' | translate"
-  [(ngModel)]="email"
->
+      <p>{{ 'REGISTER_PAGE.SUBTITLE' | translate }}</p>
 
-    <input
-  type="password"
-  [placeholder]="'REGISTER_PAGE.PASSWORD' | translate"
-  [(ngModel)]="password"
->
+      <input
+        type="text"
+        [placeholder]="'REGISTER_PAGE.FULL_NAME' | translate"
+        [(ngModel)]="name"
+      >
 
-    <button (click)="register()">
-  {{ 'REGISTER_PAGE.CREATE_ACCOUNT' | translate }}
-</button>
+      <input
+        type="email"
+        [placeholder]="'REGISTER_PAGE.EMAIL' | translate"
+        [(ngModel)]="email"
+      >
 
-    <span
-      *ngIf="errorMessage"
-      class="error"
-    >
-      {{ errorMessage }}
-    </span>
+      <input
+        type="password"
+        [placeholder]="'REGISTER_PAGE.PASSWORD' | translate"
+        [(ngModel)]="password"
+      >
+
+      <button (click)="register()">
+        {{ 'REGISTER_PAGE.CREATE_ACCOUNT' | translate }}
+      </button>
+
+      <span
+        *ngIf="errorMessage"
+        class="error"
+      >
+        {{ errorMessage }}
+      </span>
+<div class="auth-switch">
+  <span>{{ 'AUTH.HAVE_ACCOUNT' | translate }}</span>
+
+  <a routerLink="/login">
+    {{ 'AUTH.LOGIN' | translate }}
+  </a>
+</div>
+    </div>
 
   </div>
 

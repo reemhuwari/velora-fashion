@@ -265,6 +265,12 @@
       "email": "reemyo2@example.com",
       "password": "GHazal2022$$",
       "id": "KCTG3anxXbI"
+    },
+    {
+      "name": "NOOR",
+      "email": "NOOR@example.com",
+      "password": "Noor123",
+      "id": "RG0rUGtkuXQ"
     }
   ],
   "orders": [
@@ -325,6 +331,39 @@
       "date": "6/5/2026",
       "status": "Pending",
       "id": "PaQZmb2aews"
+    },
+    {
+      "customerId": "KCTG3anxXbI",
+      "customer": "reemyousef ",
+      "email": "reemyo2@example.com",
+      "phone": "078645262",
+      "city": "عمان",
+      "address": "طبربور",
+      "items": [
+        {
+          "product": {
+            "id": "4",
+            "titleKey": "PRODUCTS.ELEGANT_BEIGE_COAT",
+            "categoryKey": "CATEGORIES.LUXURY",
+            "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b",
+            "price": 260,
+            "rating": 5,
+            "reviews": [
+              {
+                "id": 1781073885920,
+                "username": "ريم ",
+                "comment": "معطف انيق",
+                "rating": "4"
+              }
+            ]
+          },
+          "quantity": 2
+        }
+      ],
+      "total": 520,
+      "date": "6/10/2026",
+      "status": "Pending",
+      "id": "c6TcTfgpf8w"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

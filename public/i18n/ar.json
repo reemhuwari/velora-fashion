@@ -179,5 +179,11 @@
   "CATEGORY": "الفئة",
   "DESCRIPTION": "الوصف",
   "DELETE": "حذف"
+},
+"AUTH": {
+  "NO_ACCOUNT": "ليس لديك حساب؟",
+  "CREATE_ACCOUNT": "إنشاء حساب",
+  "HAVE_ACCOUNT": "لديك حساب بالفعل؟",
+  "LOGIN": "تسجيل الدخول"
 }
 }

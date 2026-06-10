@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
 
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 import { AuthService }
 from '../../../services/auth.service';
@@ -19,7 +19,8 @@ import {
   imports: [
     CommonModule,
     FormsModule,
-  TranslateModule
+  TranslateModule,
+  RouterModule
   ],
 
   templateUrl: './register.html',

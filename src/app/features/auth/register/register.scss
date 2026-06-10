@@ -1,91 +1,135 @@
 .auth-page {
   min-height: 100vh;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 2rem;
-
-  background:
-    linear-gradient(
-      135deg,
-      #fdf4ff,
-      #eff6ff
-    );
 }
 
-.auth-card {
+.auth-image {
+  flex: 1;
 
+  background-image: url('/login-fashion.avif');
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.overlay {
   width: 100%;
-  max-width: 450px;
+  padding: 4rem;
 
-  padding: 3rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    transparent
+  );
 
-  border-radius: 40px;
-
- background: var(--card-bg);
-
-  box-shadow: var(--shadow);
-  text-align: center;
+  color: white;
 
   h1 {
-    font-size: 2.5rem;
-
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
 
   p {
-   color: var(--secondary-text);
+    max-width: 500px;
+    font-size: 1.1rem;
+  }
+}
 
+.auth-form {
+  width: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  background: #fff;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #64748b;
     margin-bottom: 2rem;
   }
 
   input {
     width: 100%;
-
+    padding: 1rem;
     margin-bottom: 1rem;
 
-    padding: 1rem;
-
     border-radius: 14px;
-
-    border:
-      1px solid #e2e8f0;
-
+    border: 1px solid #e2e8f0;
     outline: none;
   }
 
   button {
     width: 100%;
-
     padding: 1rem;
 
     border: none;
-
     border-radius: 999px;
 
-    background:
-      linear-gradient(
-        135deg,
-        #7c3aed,
-        #ec4899
-      );
+    background: linear-gradient(
+      135deg,
+      #7c3aed,
+      #ec4899
+    );
 
     color: white;
-
     font-weight: 700;
-
     cursor: pointer;
-
-    margin-top: 1rem;
   }
 }
 
 .error {
   display: block;
-
   margin-top: 1rem;
-
   color: #dc2626;
+}
+
+@media (max-width: 992px) {
+  .auth-image {
+    display: none;
+  }
+
+  .auth-form {
+    width: 100%;
+  }
+}.auth-switch {
+  margin-top: 1.5rem;
+
+  text-align: center;
+
+  span {
+    color: #64748b;
+  }
+
+  a {
+    margin-left: .5rem;
+
+    color: #7c3aed;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import {
   trigger,
   transition,
@@ -7,6 +7,8 @@ import {
   animate} from'@angular/animations';
 import { Navbar } from '../../shared/components/navbar/navbar';
 import { Footer } from '../../shared/components/footer/footer';
+import { filter } from 'rxjs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-main-layout',
@@ -15,7 +17,8 @@ import { Footer } from '../../shared/components/footer/footer';
   imports: [
     RouterOutlet,
     Navbar,
-    Footer
+    Footer,
+    CommonModule
   ],
   animations: [
 
@@ -67,4 +70,20 @@ import { Footer } from '../../shared/components/footer/footer';
 })
 export class MainLayout {
 
+  showNavbar = true;
+
+  constructor(private router: Router) {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+
+        const hiddenRoutes = [
+          '/login',
+          '/register'
+        ];
+
+        this.showNavbar =
+          !hiddenRoutes.includes(this.router.url);
+      });
+  }
 }

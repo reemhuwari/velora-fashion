@@ -1,37 +1,50 @@
 <section class="auth-page">
 
-  <div class="auth-card">
+  <div class="auth-image">
+    <div class="overlay">
+      <h1>Style Meets Elegance</h1>
+      <p>Discover the latest fashion trends and exclusive collections.</p>
+    </div>
+  </div>
 
-    <h1>
-  {{ 'LOGIN_PAGE.TITLE' | translate }}
-</h1>
+  <div class="auth-form">
 
-<p>
-  {{ 'LOGIN_PAGE.SUBTITLE' | translate }}
-</p>
+    <div class="auth-card">
 
-    <input
-  type="email"
-  [placeholder]="'LOGIN_PAGE.EMAIL' | translate"
-  [(ngModel)]="email"
->
+      <h1>{{ 'LOGIN_PAGE.TITLE' | translate }}</h1>
 
-    <input
-  type="password"
-  [placeholder]="'LOGIN_PAGE.PASSWORD' | translate"
-  [(ngModel)]="password"
->
+      <p>{{ 'LOGIN_PAGE.SUBTITLE' | translate }}</p>
 
-    <button (click)="login()">
-  {{ 'LOGIN_PAGE.LOGIN_BUTTON' | translate }}
-</button>
+      <input
+        type="email"
+        [placeholder]="'LOGIN_PAGE.EMAIL' | translate"
+        [(ngModel)]="email"
+      >
 
-    <span
-      *ngIf="errorMessage"
-      class="error"
-    >
-      {{ errorMessage }}
-    </span>
+      <input
+        type="password"
+        [placeholder]="'LOGIN_PAGE.PASSWORD' | translate"
+        [(ngModel)]="password"
+      >
+
+      <button (click)="login()">
+        {{ 'LOGIN_PAGE.LOGIN_BUTTON' | translate }}
+      </button>
+
+      <span
+        *ngIf="errorMessage"
+        class="error"
+      >
+        {{ errorMessage }}
+      </span>
+<div class="auth-switch">
+  <span>{{ 'AUTH.NO_ACCOUNT' | translate }}</span>
+
+  <a routerLink="/register">
+    {{ 'AUTH.CREATE_ACCOUNT' | translate }}
+  </a>
+</div>
+    </div>
 
   </div>
 
